@@ -1,0 +1,144 @@
+.header {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-image: url("src/assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.links {
+  position: absolute;
+  top: -10px;
+  background-color: var(--backgroundColor);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 5px 25px 10px 25px;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.link:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
+  padding-top: 50px;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 300;
+  text-shadow: 0 0 1px var(--backgroundColor);
+}
+
+.name {
+  color: var(--backgroundColor);
+}
+
+.sub-heading {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 200;
+}
+
+.typewriter {
+  color: var(--backgroundColor);
+}
+
+.after-typewriter {
+  color: var(--accentColor);
+}
+
+.tools-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tools {
+  display: flex;
+  position: absolute;
+  gap: 30px;
+}
+
+.tool {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 6px solid var(--backgroundColor);
+  background-color: var(--backgroundColor);
+  position: relative;
+}
+
+.tool > img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.tool:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 35px;
+    font-weight: 300;
+  }
+
+  .typewriter {
+    color: var(--accentColor);
+  }
+
+  .after-typewriter {
+    color: var(--textColor);
+  }
+
+  .tools-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .tools {
+    gap: 10px;
+    bottom: -30px;
+  }
+
+  .tool:last-child {
+    display: none;
+  }
+
+  .tool {
+    width: 40px;
+    height: 40px;
+  }
+}
