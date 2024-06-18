@@ -8,11 +8,11 @@ const Header = () => {
     <div className="header">
       <div className="links">
         <a className="link" href="https://www.github.com" target="_blank">
-          <FaGithub size={30} color="#fff" />
+          <FaGithub size={25} color="#fff" />
         </a>
         <a className="link">
           <CiLinkedin
-            size={30}
+            size={25}
             color="#fff"
             href="https://www.linkedin.com"
             target="_blank"
