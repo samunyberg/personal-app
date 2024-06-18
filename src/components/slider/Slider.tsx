@@ -69,6 +69,15 @@ const Slider = () => {
     return <Project key={slide.index} className={className} project={slide} />;
   });
 
+  const renderedIndicators = slides.map((slide) => (
+    <div
+      key={slide.index}
+      className={`slide-indicator ${
+        slide.index === currentIndex && "indicator-active"
+      }`}
+    />
+  ));
+
   return (
     <div className="container">
       <div className="slider-container">
@@ -78,6 +87,7 @@ const Slider = () => {
         <FaChevronLeft className="icon" size={25} onClick={goToPrevious} />
         <FaChevronRight className="icon" size={25} onClick={goToNext} />
       </div>
+      <div className="slide-indicators">{renderedIndicators}</div>
     </div>
   );
 };

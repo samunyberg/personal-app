@@ -3,6 +3,7 @@
   width: 100%;
   padding: 0 25px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -76,6 +77,24 @@
 
 .icon:hover {
   transform: scale(1.2);
+}
+
+.slide-indicators {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.slide-indicator {
+  height: 10px;
+  width: 10px;
+  background-color: whitesmoke;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+}
+
+.indicator-active {
+  background-color: var(--accentColor);
 }
 
 @media screen and (max-width: 768px) {
