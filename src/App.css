@@ -1,5 +1,31 @@
 .app {
-  padding-top: 20px;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 160px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.app-heading {
+  letter-spacing: 2px;
+  width: 100%;
+  border-bottom: 1px solid whitesmoke;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+
+.app-projects {
+  height: 70vh;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .app-heading {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .app-projects {
+    height: 60vh;
+  }
 }
