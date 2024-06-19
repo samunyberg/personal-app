@@ -1,16 +1,16 @@
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
-import "./header.css";
+import styles from "./header.module.css";
 
 const Header = () => {
   return (
-    <div className="header">
-      <div className="links">
+    <div className={styles.header}>
+      <div className={styles.links}>
         <a className="link" href="https://www.github.com" target="_blank">
           <FaGithub size={25} color="#fff" />
         </a>
-        <a className="link">
+        <a className={styles.link}>
           <CiLinkedin
             size={25}
             color="#fff"
@@ -20,12 +20,12 @@ const Header = () => {
         </a>
       </div>
       <div>
-        <div className="content">
-          <h1 className="heading">
-            Hi, I'm <span className="name">Samu Nyberg</span>
+        <div className={styles.content}>
+          <h1 className={styles.heading}>
+            Hi, I'm <span className={styles.name}>Samu Nyberg</span>
           </h1>
-          <div className="sub-heading">
-            <span className="typewriter">
+          <div className={styles.subHeading}>
+            <span className={styles.typewriter}>
               <Typewriter
                 options={{
                   strings: [
@@ -43,27 +43,27 @@ const Header = () => {
                 }}
               />
             </span>
-            <span className="after-typewriter">Developer</span>
+            <span className={styles.afterTypewriter}>Developer</span>
           </div>
         </div>
-        <div className="tools-container">
-          <div className="tools">
-            <div className="tool">
+        <div className={styles.toolsContainer}>
+          <div className={styles.tools}>
+            <div className={styles.tool}>
               <img src="/src/assets/javascript-logo.png" />
             </div>
-            <div className="tool">
+            <div className={styles.tool}>
               <img src="/src/assets/typescript-logo.png" />
             </div>
-            <div className="tool">
+            <div className={styles.tool}>
               <img src="/src/assets/react-logo.png" />
             </div>
-            <div className="tool">
+            <div className={styles.tool}>
               <img src="/src/assets/next-logo.png" />
             </div>
-            <div className="tool">
+            <div className={styles.tool}>
               <img src="/src/assets/tailwind-logo.png" />
             </div>
-            <div className="tool">
+            <div className={styles.tool}>
               <img src="/src/assets/plus-circle-icon.png" />
             </div>
           </div>

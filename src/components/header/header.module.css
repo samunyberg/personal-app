@@ -51,7 +51,7 @@
   color: var(--backgroundColor);
 }
 
-.sub-heading {
+.subHeading {
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -63,11 +63,11 @@
   color: var(--backgroundColor);
 }
 
-.after-typewriter {
+.afterTypewriter {
   color: var(--accentColor);
 }
 
-.tools-container {
+.toolsContainer {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -119,11 +119,11 @@
     color: var(--accentColor);
   }
 
-  .after-typewriter {
+  .afterTypewriter {
     color: var(--textColor);
   }
 
-  .tools-container {
+  .toolsContainer {
     width: 80%;
     margin: 0 auto;
   }
