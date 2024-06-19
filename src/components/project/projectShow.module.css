@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-.project-heading {
+.projectHeading {
   font-weight: 200;
   position: absolute;
   top: -135px;
@@ -39,29 +39,20 @@
   gap: 10px;
 }
 
-.badge {
-  padding: 2px 12px;
-  border-radius: 3px;
-  background-color: limegreen;
-  overflow: hidden;
-  font-size: small;
-  text-shadow: 0 0 10px darkgray;
-}
-
-.project-main {
+.projectMain {
   height: 100%;
   width: 100%;
   background-size: cover;
 }
 
-.main-image {
+.mainImage {
   object-fit: cover;
   height: 100%;
   width: 100%;
   border-radius: 15px;
 }
 
-.small-image {
+.smallImage {
   height: 100%;
   border: 3px solid var(--backgroundColor);
   box-shadow: 0 0 5px whitesmoke;
@@ -72,21 +63,20 @@
 }
 
 @media screen and (max-width: 768px) {
-  .main-image {
+  .mainImage {
     object-fit: contain;
-    border: 2px solid darkorchid;
     height: fit-content;
     margin-top: 30px;
   }
 
-  .small-image {
+  .smallImage {
     height: 70%;
     width: 35%;
     right: 0;
     bottom: -10px;
   }
 
-  .project-heading {
+  .projectHeading {
     top: -100px;
     left: 0;
     height: fit-content;

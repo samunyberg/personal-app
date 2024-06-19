@@ -1,0 +1,7 @@
+.tag {
+  padding: 2px 12px;
+  border-radius: 3px;
+  overflow: hidden;
+  font-size: small;
+  text-shadow: 0 0 10px darkgray;
+}
