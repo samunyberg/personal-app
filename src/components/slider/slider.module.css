@@ -9,7 +9,7 @@
   position: relative;
 }
 
-.slider-container {
+.sliderContainer {
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -45,15 +45,15 @@
   bottom: 30%;
 }
 
-.nearby.left {
+.slide.nearbyLeft {
   left: 10px;
 }
 
-.nearby.right {
+.slide.nearbyRight {
   right: 10px;
 }
 
-.slide.nearby .project-heading {
+.slide.nearby #projectHeadingSection {
   display: none;
 }
 
@@ -79,13 +79,13 @@
   transform: scale(1.2);
 }
 
-.slide-indicators {
+.slideIndicators {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.slide-indicator {
+.slideIndicator {
   height: 10px;
   width: 10px;
   background-color: whitesmoke;
@@ -93,7 +93,7 @@
   transition: all 0.3s ease;
 }
 
-.indicator-active {
+.activeIndicator {
   background-color: var(--accentColor);
 }
 

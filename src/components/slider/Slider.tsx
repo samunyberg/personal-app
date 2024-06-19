@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import Project from "../project/Project";
-import "./slider.css";
+import ProjectShow, { Project } from "../project/ProjectShow";
+import styles from "./slider.module.css";
 
-const slides = [
+const projects: Project[] = [
   {
-    index: 0,
+    id: 0,
     title: "Lashes Studio by Boochita",
     subtitle: "Full-stack appointment booking service.",
     backgroundImageUrl: "src/assets/lashes-studio-desktop.png",
@@ -14,22 +14,22 @@ const slides = [
     tags: [
       "NextJS",
       "TypeScript",
-      "TailwindCSS",
+      "Tailwind CSS",
       "Full-Stack",
-      "Work-In-Progress",
+      "In Production",
     ],
   },
   {
-    index: 1,
+    id: 1,
     title: "Issue Tracker",
     subtitle: "Full-stack software project issue tracker.",
     backgroundImageUrl: "src/assets/issue-tracker-desktop.png",
     images: ["src/assets/issue-tracker-mobile1.png"],
     repositoryUrl: "https://github.com/samunyberg/issue-tracker",
-    tags: ["NextJS", "TypeScript", "Chakra UI", "Full-Stack", "Demo Project"],
+    tags: ["NextJS", "TypeScript", "Full-Stack", "Demo Project"],
   },
   {
-    index: 2,
+    id: 2,
     title: "Game Hub",
     subtitle: "Frontend for a video game discovery app.",
     backgroundImageUrl: "src/assets/game-hub-desktop.png",
@@ -43,51 +43,67 @@ const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
-    const newIndex = (currentIndex - 1 + slides.length) % slides.length;
+    const newIndex = (currentIndex - 1 + projects.length) % projects.length;
     setCurrentIndex(newIndex);
   };
 
   const goToNext = () => {
-    const newIndex = (currentIndex + 1) % slides.length;
+    const newIndex = (currentIndex + 1) % projects.length;
     setCurrentIndex(newIndex);
   };
 
-  const renderedSlides = slides.map((slide, index) => {
-    let className = "slide";
-    if (index === currentIndex) className += " current";
+  const getSlideClassNames = (index: number) => {
+    let className = styles.slide;
+
+    if (index === currentIndex) className += ` ${styles.current}`;
     else if (
       index === currentIndex - 1 ||
-      (currentIndex === 0 && index === slides.length - 1)
+      (currentIndex === 0 && index === projects.length - 1)
     )
-      className += " nearby left";
+      className += ` ${styles.nearby} ${styles.nearbyLeft}`;
     else if (
       index === currentIndex + 1 ||
-      (currentIndex === slides.length - 1 && index === 0)
+      (currentIndex === projects.length - 1 && index === 0)
     )
-      className += " nearby right";
+      className += ` ${styles.nearby} ${styles.nearbyRight}`;
 
-    return <Project key={slide.index} className={className} project={slide} />;
+    return className;
+  };
+
+  const renderedSlides = projects.map((slide, index) => {
+    return (
+      <ProjectShow
+        key={slide.id}
+        project={slide}
+        className={getSlideClassNames(index)}
+        showHeader={!getSlideClassNames(index).includes("nearby")}
+      />
+    );
   });
 
-  const renderedIndicators = slides.map((slide) => (
+  const renderedIndicators = projects.map((slide) => (
     <div
-      key={slide.index}
-      className={`slide-indicator ${
-        slide.index === currentIndex && "indicator-active"
+      key={slide.id}
+      className={`${styles.slideIndicator} ${
+        slide.id === currentIndex && styles.activeIndicator
       }`}
     />
   ));
 
   return (
-    <div className="container">
-      <div className="slider-container">
-        <div className="slides">{renderedSlides}</div>
+    <div className={styles.container}>
+      <div className={styles.sliderContainer}>
+        <div className={styles.slides}>{renderedSlides}</div>
       </div>
-      <div className="icons">
-        <FaChevronLeft className="icon" size={25} onClick={goToPrevious} />
-        <FaChevronRight className="icon" size={25} onClick={goToNext} />
+      <div className={styles.icons}>
+        <FaChevronLeft
+          className={styles.icon}
+          size={25}
+          onClick={goToPrevious}
+        />
+        <FaChevronRight className={styles.icon} size={25} onClick={goToNext} />
       </div>
-      <div className="slide-indicators">{renderedIndicators}</div>
+      <div className={styles.slideIndicators}>{renderedIndicators}</div>
     </div>
   );
 };
