@@ -7,7 +7,7 @@
   margin: 0 auto;
 }
 
-.app-heading {
+.heading {
   letter-spacing: 2px;
   width: 100%;
   border-bottom: 1px solid whitesmoke;
@@ -15,17 +15,17 @@
   margin-bottom: 50px;
 }
 
-.app-projects {
+.projects {
   height: 70vh;
   margin-top: 60px;
 }
 
 @media screen and (max-width: 768px) {
-  .app-heading {
+  .heading {
     font-size: 18px;
     margin-bottom: 15px;
   }
-  .app-projects {
+  .projects {
     height: 60vh;
   }
 }
