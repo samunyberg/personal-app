@@ -52,22 +52,22 @@ const Greeting = () => {
         <div className={styles.toolsContainer}>
           <div className={styles.tools}>
             <div className={styles.tool}>
-              <img src="/src/assets/javascript-logo.png" />
+              <img src="/assets/javascript-logo.png" />
             </div>
             <div className={styles.tool}>
-              <img src="/src/assets/typescript-logo.png" />
+              <img src="/assets/typescript-logo.png" />
             </div>
             <div className={styles.tool}>
-              <img src="/src/assets/react-logo.png" />
+              <img src="/assets/react-logo.png" />
             </div>
             <div className={styles.tool}>
-              <img src="/src/assets/next-logo.png" />
+              <img src="/assets/next-logo.png" />
             </div>
             <div className={styles.tool}>
-              <img src="/src/assets/tailwind-logo.png" />
+              <img src="/assets/tailwind-logo.png" />
             </div>
             <div className={styles.tool}>
-              <img src="/src/assets/plus-circle-icon.png" />
+              <img src="/assets/plus-circle-icon.png" />
             </div>
           </div>
         </div>

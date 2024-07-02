@@ -5,7 +5,7 @@ const MediaCard = () => {
   return (
     <div className={styles.media}>
       <div className={styles.mediaImage}>
-        <img src="src/assets/profileImg.jpg" />
+        <img src="/assets/profileImg.jpg" />
       </div>
       <div className={styles.mediaHandles}>
         <div className={styles.mediaName}>Samu Nyberg</div>
