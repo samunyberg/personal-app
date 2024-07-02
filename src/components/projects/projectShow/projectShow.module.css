@@ -120,7 +120,7 @@
 
 @media screen and (max-width: 430px) {
   .container {
-    gap: 5px;
+    gap: 25px;
   }
 
   .imageContainer {
