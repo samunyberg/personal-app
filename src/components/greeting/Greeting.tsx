@@ -1,22 +1,25 @@
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
-import styles from "./header.module.css";
+import styles from "./greeting.module.css";
 
-const Header = () => {
+const Greeting = () => {
   return (
-    <div className={styles.header}>
+    <div className={styles.container}>
       <div className={styles.links}>
-        <a className="link" href="https://www.github.com" target="_blank">
-          <FaGithub size={25} color="#fff" />
+        <a
+          className={styles.link}
+          href="https://www.github.com/samunyberg"
+          target="_blank"
+        >
+          <FaGithub size={23} color="#fff" />
         </a>
-        <a className={styles.link}>
-          <CiLinkedin
-            size={25}
-            color="#fff"
-            href="https://www.linkedin.com"
-            target="_blank"
-          />
+        <a
+          className={styles.link}
+          href="https://www.linkedin.com/in/samu-nyberg-137301227"
+          target="_blank"
+        >
+          <CiLinkedin size={23} color="#fff" />
         </a>
       </div>
       <div>
@@ -73,4 +76,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Greeting;

@@ -1,7 +1,7 @@
 :root {
-  --backgroundColor: #011428;
+  --backgroundColor: #0c0c1d;
   --textColor: rgb(255, 255, 255);
-  --accentColor: #d26c05;
+  --accentColor: orange;
 }
 
 *,
@@ -13,14 +13,51 @@
 }
 
 html {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   letter-spacing: 1px;
   color: var(--textColor);
-  background-color: var(--backgroundColor);
+  background: linear-gradient(180deg, var(--backgroundColor), #10032d);
 }
 
 a {
   text-decoration: none;
-  color: var(--textColor);
+  color: inherit;
+}
+
+button {
+  border-radius: 5px;
+  padding: 5px 15px;
+  border: 2px solid var(--accentColor);
+  background-color: transparent;
+  color: white;
+  font: inherit;
+  width: fit-content;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+button:hover {
+  border: 2px solid var(--accentColor);
+  background-color: var(--accentColor);
+  color: white;
+}
+
+@media screen and (max-width: 425px) {
+  button {
+    width: 100%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--backgroundColor);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+  border-radius: 6px;
 }

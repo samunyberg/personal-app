@@ -1,0 +1,111 @@
+.contact > h3 {
+  color: var(--accentColor);
+  padding-bottom: 10px;
+  border-bottom: 1px solid whitesmoke;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact > form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.formGroup .error {
+  color: tomato;
+  font-size: 12px;
+  padding: 0 3px;
+}
+
+.formGroup input,
+textarea {
+  padding: 10px 15px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  font: inherit;
+  font-size: 15px;
+  transition: all 0.15s ease;
+  caret-color: var(--accentColor);
+  color: white;
+}
+
+.formGroup input:focus,
+textarea:focus {
+  outline: 2px solid var(--accentColor);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.formGroup textarea {
+  resize: none;
+  height: 15rem;
+}
+
+.formBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sendingNotification {
+  align-self: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  width: fit-content;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.sendingSuccess {
+  border: 2px solid limegreen;
+}
+
+.sendingSuccess > svg {
+  color: limegreen;
+}
+
+.sendingError {
+  border: 2px solid tomato;
+}
+
+.sendingError > svg {
+  color: tomato;
+}
+
+@media screen and (max-width: 768px) {
+  .contact form {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contact form {
+    width: 100%;
+  }
+
+  .formBottom {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .sendingNotification {
+    width: 100%;
+  }
+}

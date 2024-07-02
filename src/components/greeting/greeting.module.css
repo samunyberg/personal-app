@@ -1,12 +1,17 @@
-.header {
-  border-radius: 20px;
+.container {
+  border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   position: relative;
-  background-image: url("src/assets/background.jpg");
-  background-size: cover;
+  background: linear-gradient(
+    45deg,
+    rgb(10, 110, 210),
+    rgb(65, 15, 110),
+    rgb(185, 108, 248)
+  );
+  height: 100%;
 }
 
 .links {
@@ -17,8 +22,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 5px 25px 5px 25px;
+  gap: 25px;
+  padding: 5px 35px 5px 35px;
 }
 
 .link {
@@ -42,12 +47,8 @@
 
 .heading {
   font-size: 40px;
-  font-weight: 300;
-  text-shadow: 0 0 1px var(--backgroundColor);
-}
-
-.name {
-  color: var(--backgroundColor);
+  font-weight: 600;
+  letter-spacing: 1.5px;
 }
 
 .subHeading {
@@ -55,15 +56,17 @@
   display: flex;
   align-items: center;
   gap: 2px;
-  font-weight: 200;
+  font-weight: 700;
 }
 
 .typewriter {
-  color: var(--backgroundColor);
+  color: var(--accentColor);
+  font-weight: 700;
 }
 
 .afterTypewriter {
-  color: var(--accentColor);
+  color: var(--backgroundColor);
+  font-weight: 700;
 }
 
 .toolsContainer {
@@ -71,11 +74,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: -33px;
 }
 
 .tools {
   display: flex;
-  position: absolute;
   gap: 30px;
 }
 
@@ -88,7 +93,6 @@
   border-radius: 100%;
   border: 6px solid var(--backgroundColor);
   background-color: var(--backgroundColor);
-  position: relative;
 }
 
 .tool > img {
@@ -97,21 +101,15 @@
   width: 100%;
 }
 
-.tool:hover {
-  transform: scale(1.1);
-  transition: all 0.3s ease;
-}
-
 @media screen and (max-width: 768px) {
   .content {
-    padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
   }
 
   .heading {
-    font-size: 35px;
-    font-weight: 300;
+    font-size: 25px;
+    font-weight: 800;
   }
 
   .typewriter {
@@ -123,13 +121,11 @@
   }
 
   .toolsContainer {
-    width: 80%;
-    margin: 0 auto;
+    bottom: -23px;
   }
 
   .tools {
     gap: 10px;
-    bottom: -30px;
   }
 
   .tool:last-child {

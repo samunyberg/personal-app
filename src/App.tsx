@@ -1,14 +1,19 @@
 import styles from "./App.module.css";
-import Header from "./components/header/Header";
-import Slider from "./components/slider/Slider";
+import Greeting from "./components/greeting/Greeting";
+import Profile from "./components/profile/Profile";
+import Projects from "./components/projects/Projects";
 
 function App() {
   return (
     <div className={styles.app}>
-      <Header />
+      <div className={styles.greeting}>
+        <Greeting />
+      </div>
       <div className={styles.projects}>
-        <h2 className={styles.heading}>Projects</h2>
-        <Slider />
+        <Projects />
+      </div>
+      <div className={styles.profile}>
+        <Profile />
       </div>
     </div>
   );

@@ -1,0 +1,32 @@
+.infoList {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoListItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  gap: 5px;
+}
+
+.infoListItemHeading {
+  font-size: 16px;
+  color: var(--accentColor);
+}
+
+.infoListItemText {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.infoList hr {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 425px) {
+  .infoList {
+    padding: 0;
+  }
+}

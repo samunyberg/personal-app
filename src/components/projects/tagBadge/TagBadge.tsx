@@ -9,18 +9,24 @@ export type Tag =
   | "Full-Stack"
   | "Frontend"
   | "Demo Project"
-  | "In Production";
+  | "In Production"
+  | "Angular"
+  | "Firebase"
+  | "Work-In-Progress";
 
 const colors: Record<Tag, { text: string; bg: string }> = {
   React: { text: "white", bg: "dodgerblue" },
   NextJS: { text: "black", bg: "white" },
-  TypeScript: { text: "white", bg: "dodgerblue" },
+  TypeScript: { text: "white", bg: "royalblue" },
   JavaScript: { text: "white", bg: "yellow" },
-  "Tailwind CSS": { text: "white", bg: "darkCyan" },
-  "Full-Stack": { text: "white", bg: "tomato" },
-  Frontend: { text: "white", bg: "dodgerblue" },
+  "Tailwind CSS": { text: "white", bg: "darkslategray" },
+  "Full-Stack": { text: "white", bg: "darkcyan" },
+  Frontend: { text: "white", bg: "darkorchid" },
   "Demo Project": { text: "white", bg: "orange" },
   "In Production": { text: "white", bg: "limeGreen" },
+  Angular: { text: "white", bg: "darkgoldenrod" },
+  Firebase: { text: "white", bg: "coral" },
+  "Work-In-Progress": { text: "white", bg: "coral" },
 };
 
 interface Props {
