@@ -59,7 +59,7 @@ const projects: Project[] = [
     id: 2,
     title: "Issue Tracker",
     subtitle: "Full-stack software project issue tracker.",
-    backgroundImageUrl: "src/assets/issue-tracker-desktop.png",
+    backgroundImageUrl: "src/assets/issue-tracker/issue-tracker-desktop.png",
     images: [
       "src/assets/issue-tracker/issue-tracker-mobile1.png",
       "src/assets/issue-tracker/issue-tracker-mobile2.png",
