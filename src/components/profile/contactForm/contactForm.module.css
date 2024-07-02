@@ -95,7 +95,7 @@ textarea:focus {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
   .contact form {
     width: 100%;
   }

@@ -57,7 +57,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
   .media {
     flex-direction: column;
     gap: 10px;

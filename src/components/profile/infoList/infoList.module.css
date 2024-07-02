@@ -25,7 +25,7 @@
   border-color: rgba(255, 255, 255, 0.2);
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
   .infoList {
     padding: 0;
   }
