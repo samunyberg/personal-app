@@ -10,14 +10,14 @@ const projects: Project[] = [
     subtitle: "Full-stack appointment booking service.",
     backgroundImageUrl: "/assets/lashes-studio/lashes-studio-desktop.png",
     images: [
-      "/assets/lashes-studio/lashes-studio-mobile1.png",
-      "/assets/lashes-studio/lashes-studio-login.png",
-      "/assets/lashes-studio/lashes-studio-register.png",
+      "/assets/lashes-studio/lashes-studio-landing.png",
       "/assets/lashes-studio/lashes-studio-step1.png",
-      "/assets/lashes-studio/lashes-studio-calendar.png",
       "/assets/lashes-studio/lashes-studio-step2.png",
       "/assets/lashes-studio/lashes-studio-step3.png",
       "/assets/lashes-studio/lashes-studio-thank-you.png",
+      "/assets/lashes-studio/lashes-studio-login.png",
+      "/assets/lashes-studio/lashes-studio-register.png",
+      "/assets/lashes-studio/lashes-studio-sidebar.png",
     ],
     repositoryUrl: "https://github.com/samunyberg/lashes-studio-by-boochita",
     tags: [
