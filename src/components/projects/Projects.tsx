@@ -7,11 +7,13 @@ const projects: Project[] = [
   {
     id: 0,
     title: "Lashes Studio by Boochita",
-    subtitle: "Full-stack appointment booking service.",
+    subtitle:
+      "Full-stack appointment booking service. Currently in development.",
     backgroundImageUrl: "/assets/lashes-studio/lashes-studio-desktop.png",
     images: [
       "/assets/lashes-studio/lashes-studio-landing.png",
       "/assets/lashes-studio/lashes-studio-step1.png",
+      "/assets/lashes-studio/lashes-studio-calendar.png",
       "/assets/lashes-studio/lashes-studio-step2.png",
       "/assets/lashes-studio/lashes-studio-step3.png",
       "/assets/lashes-studio/lashes-studio-thank-you.png",
@@ -29,6 +31,7 @@ const projects: Project[] = [
     ],
     features: [
       "Credential authentication",
+      "Support for Finnish and English",
       "Confirmation emails",
       "Admin section for management jobs",
       "Multi-step booking form",
