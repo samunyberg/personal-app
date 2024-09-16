@@ -36,7 +36,7 @@ const projects: Project[] = [
       "/assets/lashes-studio/lashes-studio-sidebar.png",
       "/assets/lashes-studio/lashes-studio-menu.png",
     ],
-    repositoryUrl: "https://github.com/samunyberg/lashes-studio-by-boochita",
+    repositoryUrl: "https://github.com/samunyberg/lsb",
     tags: [
       "NextJS",
       "TypeScript",
