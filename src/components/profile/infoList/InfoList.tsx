@@ -16,7 +16,7 @@ const items = [
   {
     label: "Worked With",
     content:
-      "JavaScript, TypeScript, Java, Python, React, NodeJS, NextJS, Docker, various CSS libraries including Tailwind, Styled Components, ChakraUI, RadixUI and more.",
+      "JavaScript, TypeScript, Java, Python, React, Redux, NodeJS, NextJS, Docker, various CSS libraries including Tailwind, Styled Components, ChakraUI and more.",
   },
 ];
 
