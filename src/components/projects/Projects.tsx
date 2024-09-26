@@ -42,7 +42,7 @@ const projects: Project[] = [
       "TypeScript",
       "Tailwind CSS",
       "Full-Stack",
-      "Work-In-Progress",
+      "In Production",
     ],
     features: [
       "Credential authentication",
